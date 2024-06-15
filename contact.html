@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-indigo-800 text-white shadow-lg">
+    <nav class="container mx-auto p-4">
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:underline">HOME</a></li>
+        <li><a href="cars.html" class="hover:underline">CARS</a></li>
+        <li><a href="about.html" class="hover:underline">ABOUT US</a></li>
+        <li><a href="contact.html" class="hover:underline">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container mx-auto py-10">
+    <h1 class="text-3xl font-bold mb-6">CONTACT INFORMATION</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+        <form action="contact.php" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 rounded-lg border border-gray-300" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-300" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+            <textarea id="message" name="message" class="w-full p-3 rounded-lg border border-gray-300" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-800 text-white p-3 rounded-lg">Send Message</button>
+        </form>
+      </div>
+      
+      <!-- Contact Details -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Contact Information</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-700 mb-4">You can reach us through the following channels:</p>
+          <p class="text-gray-700 mb-2"><strong>Email:</strong> gcyprian18@gmail.com</p>
+          <p class="text-gray-700 mb-2"><strong>Phone:</strong> +255 687 414 983</p>
+          <p class="text-gray-700 mb-2"><strong>Address:</strong> 123 Main Street, Dar es Salaam, Tanzania</p>
+        </div>
+
+        <!-- Car Renting Information -->
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Car Renting Information</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-700 mb-4">We offer a variety of cars for rent to suit your needs:</p>
+          <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li>Luxury Sedans for business trips and special occasions</li>
+            <li>SUVs for family trips with ample room for passengers and luggage</li>
+            <li>Convertibles for scenic drives along the coast</li>
+          </ul>
+          <p class="text-gray-700 mb-2"><strong>Contact us for more details and availability.</strong></p>
+        </div>
+
+        <!-- Map (embedded Google Map showing Dar es Salaam, Tanzania) -->
+        <h2 class="text-2xl font-semibold mt-8 mb-4">OUR LOCATION</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5846378359365!2d39.20264031524331!3d-6.792354695081929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c1d5178eab3%3A0x12a858e370dd4e7!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1624036029056!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-indigo-800 text-white text-center p-6 mt-10">
+    <p class="mb-2">Contact us: gcyprian18@gmail.com</p>
+    <p>&copy; 2024. Developed by Gosberth Cyprian</p>
+  </footer>
+</body>
+</html>
